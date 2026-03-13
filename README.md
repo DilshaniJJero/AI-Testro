@@ -1,73 +1,155 @@
-# Welcome to your Lovable project
+# AI Testro
 
-## Project info
+AI Testro is a web-based forensic analysis platform designed to detect AI-generated content across **text, images, audio, and video**. The system analyzes digital media using multiple forensic techniques to determine whether the content is human-created or AI-generated.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This project was developed as part of the **National Level Cyber Security Hackathon at SRM Institute of Science and Technology, Chennai Ramapuram**.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Project Overview
 
-**Use Lovable**
+With the rapid growth of artificial intelligence tools capable of generating realistic text, images, audio, and videos, verifying the authenticity of digital content has become increasingly challenging.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+AI Testro provides a **unified forensic analysis system** that helps identify artificial content by examining hidden patterns, metadata, and AI generation artifacts.
 
-Changes made via Lovable will be committed automatically to this repo.
+The platform assigns a **probability score** and generates **forensic reports** that help investigators and analysts understand whether the content is likely AI-generated.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Key Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Text AI Detection  
+- Image Forensic Analysis  
+- Audio Deepfake Detection  
+- Video Deepfake Detection  
+- Metadata Inspection  
+- Statistical Pattern Analysis  
+- Watermark / Artificial Trace Detection  
+- Unified Analysis Platform  
+- Forensic Report Generation  
+- Dashboard with Analysis Statistics
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Metadata Analysis
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+The system extracts and analyzes important metadata such as:
 
-# Step 3: Install the necessary dependencies.
-npm i
+- File name
+- File type
+- File size
+- Creation date
+- Modified date
+- Resolution or pixel size
+- Duration (audio/video)
+- Device or software used
+- Location (if available)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+The platform also detects **metadata inconsistencies** that may indicate manipulated or synthetic content.
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Forensic Report Generation
 
-**Use GitHub Codespaces**
+After analysis, AI Testro generates a **detailed forensic report** including:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Report ID
+- Timestamp
+- File hash value (SHA-256)
+- AI probability score
+- Metadata analysis
+- Artifact detection results
+- Short forensic explanation
+- Detailed analysis summary
 
-## What technologies are used for this project?
+Reports can be downloaded in:
 
-This project is built with:
+- PDF
+- HTML
+- DOC
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+These reports are designed to support **digital forensic investigations and cybersecurity analysis**.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Technology Stack
 
-## Can I connect a custom domain to my Lovable project?
+### Frontend
+- HTML
+- CSS
+- JavaScript
 
-Yes, you can!
+### Backend
+- Python (Flask)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Libraries
+- Pillow
+- MoviePy
+- Pydub
+- ReportLab
+- Flask-CORS
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## Project Structure
+AI-Testro
+│
+├── frontend
+│ ├── index.html
+│ ├── dashboard.html
+│ ├── styles.css
+│ └── script.js
+│
+├── backend
+│ ├── app.py
+│ ├── analysis
+│ │ ├── text_detector.py
+│ │ ├── image_forensics.py
+│ │ ├── audio_detector.py
+│ │ └── video_detector.py
+│
+├── reports
+│
+└── README.md
+
+
+---
+
+## Use Cases
+
+AI Testro can be used by:
+
+- Cybersecurity investigators  
+- Digital forensic analysts  
+- Journalists and fact-checking teams  
+- Social media monitoring platforms  
+- Law enforcement agencies  
+
+---
+
+## Future Improvements
+
+- Advanced machine learning detection models
+- Blockchain-based evidence verification
+- Real-time social media monitoring
+- Automated deepfake detection models
+- Improved AI watermark detection
+
+---
+
+## Project Goal
+
+The goal of AI Testro is to create a **scalable forensic platform capable of detecting AI-generated content and supporting digital evidence verification in cybersecurity investigations.**
+
+---
+
+## Hackathon
+
+Developed for the **National Level Cyber Security Hackathon**  
+**SRM Institute of Science and Technology – Ramapuram Campus**
+
+---
+
+## License
+
+This project is developed for research and educational purposes.
